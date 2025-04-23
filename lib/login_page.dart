@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onlinepertemuan/home_page.dart';
+import 'package:onlinepertemuan/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -50,7 +51,14 @@ class _LoginPageState extends State<LoginPage> {
                     MaterialPageRoute(builder: (context) => const HomePage()),
                     );
                 }
-              }, child: Text('Login'))
+              }, child: Text('Login')
+              ),
+              TextButton(onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RegisterPage()),
+                  );
+              }, child: Text('Belum punya akun? Daftar'),)
             ],
           ),))
     );
