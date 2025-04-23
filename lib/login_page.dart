@@ -12,6 +12,12 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+
+  @override
+  void initState(){
+    super.initState();
+  }
+  
   @override
   Widget build(BuildContext context) {
     final _formkey = GlobalKey<FormState>();
