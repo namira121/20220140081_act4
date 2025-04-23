@@ -16,7 +16,11 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: Form(
         key: _formkey, 
-        child: child)
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            
+          ),))
     );
     
   }
