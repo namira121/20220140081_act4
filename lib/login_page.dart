@@ -12,7 +12,12 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final _formkey = GlobalKey<FormState>();
+    return Scaffold(
+      body: Form(
+        key: _formkey, 
+        child: child)
+    );
     
   }
 }
