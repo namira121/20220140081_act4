@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onlinepertemuan/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -41,7 +42,15 @@ class _LoginPageState extends State<LoginPage> {
                   }
                   return null;
                 },
-              )
+              ),
+              ElevatedButton(onPressed: (){
+                if (_formkey.currentState!.validate()){
+                  Navigator.pushReplacement(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                    );
+                }
+              }, child: Text('Login'))
             ],
           ),))
     );
